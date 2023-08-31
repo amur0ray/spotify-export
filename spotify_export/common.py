@@ -9,7 +9,7 @@ def get_creds(path):
 
     return client_id, client_secret
 
-def get_client(path='.client.txt'):
+def get_client(path='.client.json'):
     with open(path) as f:
         js = json.loads(f.read())
         client_id, client_secret = js.values()

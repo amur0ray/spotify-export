@@ -5,7 +5,7 @@ from spotipy.oauth2 import SpotifyClientCredentials
 from spotify_export.common import get_creds
 
 async def main():
-    client_id, client_secret = get_creds('.client.txt')
+    client_id, client_secret = get_creds('.client.json')
 
     sp = spotipy.Spotify(auth_manager=SpotifyClientCredentials(client_id, client_secret))
 

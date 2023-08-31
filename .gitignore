@@ -1,5 +1,6 @@
 .vscode/
 .venv/
-.client.txt
 .cache
 __pycache__
+*.log
+*.json
